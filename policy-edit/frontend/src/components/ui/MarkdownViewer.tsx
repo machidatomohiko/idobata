@@ -4,6 +4,7 @@ import ReactMarkdown from "react-markdown";
 import rehypeHighlight from "rehype-highlight"; // Syntax highlighting
 import rehypeRaw from "rehype-raw"; // To handle raw HTML, like embedded images
 import rehypeSanitize from "rehype-sanitize"; // Sanitize HTML for security
+import rehypeSlug from "rehype-slug"; // Automatically generates ID attributes for headings, enabling easy in-page linking
 import remarkGfm from "remark-gfm"; // GFM (Tables, strikethrough, task lists, etc.)
 // Import highlight.js styles (choose a theme)
 // You might need to install highlight.js: npm install highlight.js
@@ -25,7 +26,7 @@ const MarkdownViewer: React.FC<MarkdownViewerProps> = ({ content }) => {
       <ReactMarkdown
         // className prop removed from here
         remarkPlugins={[remarkGfm]} // Enable GFM features
-        rehypePlugins={[rehypeRaw, rehypeSanitize, rehypeHighlight]} // Enable raw HTML, sanitize, and syntax highlighting
+        rehypePlugins={[rehypeRaw, rehypeSanitize, rehypeHighlight, rehypeSlug]} // Enable raw HTML, sanitize, syntax highlighting, and heading IDs
         // Optional: Customize components (e.g., links to open in new tabs)
         // Optional: Customize components (e.g., links to open in new tabs)
         components={{
