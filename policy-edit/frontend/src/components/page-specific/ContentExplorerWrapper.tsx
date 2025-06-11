@@ -1,4 +1,4 @@
-// src/components/ContentExplorerWrapper.tsx
+// src/components/page-specific/ContentExplorerWrapper.tsx
 import { useParams } from "react-router-dom";
 import ContentExplorer from "./ContentExplorer";
 

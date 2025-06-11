@@ -1,4 +1,4 @@
-// src/components/MarkdownViewer.tsx
+// src/components/ui/MarkdownViewer.tsx
 import type React from "react";
 import ReactMarkdown from "react-markdown";
 import rehypeHighlight from "rehype-highlight"; // Syntax highlighting

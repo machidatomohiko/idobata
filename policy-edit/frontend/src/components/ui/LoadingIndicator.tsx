@@ -1,4 +1,4 @@
-// src/components/LoadingIndicator.tsx
+// src/components/ui/LoadingIndicator.tsx
 import type React from "react";
 
 const LoadingIndicator: React.FC = () => {
