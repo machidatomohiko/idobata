@@ -1,4 +1,4 @@
-// src/components/FileView.tsx
+// src/components/page-specific/FileView.tsx
 import type React from "react";
 import { decodeBase64Content } from "../../lib/github"; // Base64デコード関数をインポート
 import MarkdownViewer from "../ui/MarkdownViewer"; // Import the actual component

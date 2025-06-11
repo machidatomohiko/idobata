@@ -1,4 +1,4 @@
-// src/components/Breadcrumbs.tsx
+// src/components/layout/Breadcrumbs.tsx
 import React from "react";
 import { FaHome } from "react-icons/fa"; // Home icon
 import { Link } from "react-router-dom";

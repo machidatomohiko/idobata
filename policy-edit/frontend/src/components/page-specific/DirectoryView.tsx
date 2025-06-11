@@ -1,4 +1,4 @@
-// src/components/DirectoryView.tsx
+// src/components/page-specific/DirectoryView.tsx
 import type React from "react";
 import { FaFileAlt, FaFolder } from "react-icons/fa"; // Folder and File icons
 import { Link } from "react-router-dom";
